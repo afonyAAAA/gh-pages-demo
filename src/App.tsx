@@ -17,7 +17,11 @@ function App() {
     fetchData();
   }, [])
 
-  return <div className='App'> {data ? <p>{data.greeting}</p>: 'no data'} </div>;
+  return (
+    <div className="App">
+      {data ? <p>{data.greeting}</p>: "no data"}      
+    </div>
+  );
 }
 
 export default App;
